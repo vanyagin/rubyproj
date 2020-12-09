@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first
 
 
-unless Product.any?
-p1 = Producer.find_by(name: 'Moulinex')
-c2 = Category.find_by(name: 'Миксеры')
+/unless Product.any?/
+p1 = Producer.create!(name: 'Moulinex', country:'Франция')
+c2 = Category.create!(name: 'Миксеры')
 
 Product.create!(name: 'Миксер Moulinex Quick Mix HM3108B1',
                 price: 2490,
@@ -17,4 +17,4 @@ Product.create!(name: 'Миксер Moulinex Quick Mix HM3108B1',
                 quantity: 13,
                 category_id: c2.id,
                 producer_id: p1.id)
-end
+/end/
