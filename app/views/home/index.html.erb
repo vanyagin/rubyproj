@@ -1,9 +1,11 @@
-Начальная страница.
+<div>
+  <%= link_to "Моя корзина", "cart" %>
+</div>
 <div>
   Список категорий:
 </div>
 <% @categories.each do |category| %>
   <div>
-    <%= link_to category.name, "home/choose_category/#{category.id}" %>
+    <%= link_to category.name, "choose_category/#{category.id}" %>
   </div>
 <% end %>
