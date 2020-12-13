@@ -20,6 +20,7 @@ unless Producer.any?
   p2=Producer.create!(name: 'Philips', country: 'Нидерланды')
   p3=Producer.create!(name: 'Redmond', country: 'Россия')
   p4=Producer.create!(name: 'Samsung', country: 'Корея')
+  p5=Producer.create!(name: 'Tefal', country: 'Франция')
 end
 
 unless Product.any?
@@ -29,18 +30,36 @@ Product.create!(name: 'Миксер Moulinex Quick Mix HM3108B1',
                 quantity: 13,
                 category_id: c1.id,
                 producer_id: p1.id)
+Product.create!(name: 'Миксер Philips HR3740/00',
+                price: 3690,
+                description: '-',
+                quantity: 15,
+                category_id: c1.id,
+                producer_id: p2.id)
 Product.create!(name: 'Тостер Philips HD2582/90',
                 price: 2990,
                 description: '-',
                 quantity: 10,
                 category_id: c2.id,
                 producer_id: p2.id)
+Product.create!(name: 'Тостер Tefal TT1A1830',
+                price: 3290,
+                description: '-',
+                quantity: 11,
+                category_id: c2.id,
+                producer_id: p5.id)
 Product.create!(name: 'Электромясорубка Redmond RMG-1236',
-                price: 3990,
+                price: 4990,
                 description: '-',
                 quantity: 7,
                 category_id: c3.id,
                 producer_id: p3.id)
+Product.create!(name: 'Электромясорубка Moulinex HV1 ME106832',
+                price: 6990,
+                description: '-',
+                quantity: 9,
+                category_id: c3.id,
+                producer_id: p1.id)
 Product.create!(name: 'Микроволновая печь соло Samsung ME81KRW-2',
                 price: 7990,
                 description: '-',
