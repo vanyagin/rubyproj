@@ -2,6 +2,6 @@
 
 <% @product.each do |product| %>
   <div>
-    <%= product.name %>
+    <%= link_to product.name, "home/choose_product/#{product.id}" %>
   </div>
 <% end %>
