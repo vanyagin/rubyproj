@@ -1,0 +1,12 @@
+.cart{
+    width: 125px;
+    font-size: 20px;
+    color: #B00100;
+    border: black solid 1px;
+    background: deepskyblue;
+    margin-left: 90%;
+}
+
+.cart:hover{
+    background: aqua;
+}

@@ -1,0 +1,22 @@
+.name{
+    font-size: 36px;
+    color: darkmagenta;
+}
+
+.price{
+    font-size: 28px;
+    color: black;
+    margin-top: 10px;
+}
+
+.description{
+    font-size: 22px;
+    color: black;
+    margin-top: 20px;
+}
+
+.quantity{
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}

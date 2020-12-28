@@ -1,14 +1,22 @@
-<div>
+<head>
+  <style>
+    body{
+        background: cyan;
+    }
+  </style>
+</head>
+<div class="cart">
   <%= link_to "Моя корзина", "cart" %>
 </div>
-<div>
+<div class="list">
   Список категорий:
 </div>
-<% @categories.each do |category| %>
-  <div>
-    <%= link_to category.name, "choose_category/#{category.id}" %>
-  </div>
-<% end %>
+<div class="category-container">
+  <% @categories.each do |category| %>
+    <%= render partial: 'category', object: category  %>
+  <% end %>
+</div>
+<div>
   <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
   <script type="text/javascript">
       var map;
@@ -20,6 +28,7 @@
           DG.marker([47.21667476212807, 39.62888766716547]).addTo(map).bindPopup('');
       });
   </script>
+</div>
 <body>
-<div id="map" style="width:500px; height:400px"></div>
+<div id="map" style="width:500px; height:400px; margin-left: 70%"></div>
 </body>

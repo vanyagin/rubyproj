@@ -1,0 +1,24 @@
+.category{
+    font-size: 20px;
+    color: black;
+    border: black solid 1px;
+    padding: 5px;
+    background: deepskyblue;
+}
+
+.category:hover{
+    background: aqua;
+}
+
+.category-container{
+    displey: flex;
+    width: 250px;
+    margin: 20px;
+}
+
+.list{
+    font-size: 28px;
+    color: blueviolet;
+    margin-left: 30px;
+    margin-top: 20px;
+}

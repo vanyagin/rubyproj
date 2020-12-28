@@ -1,13 +1,25 @@
-<%=@product.name %>
-<div>
+<head>
+  <style>
+      body{
+          background: cyan;
+      }
+  </style>
+</head>
+<div class="cart">
+  <%= link_to "Моя корзина", "/cart" %>
+</div>
+<div class="name">
+  <%=@product.name %>
+</div>
+<div class="price">
   Цена:
   <%= @product.price %>
 </div>
-<div>
+<div class="description">
   Описание:
   <%= @product.description %>
 </div>
-<div>
+<div class="quantity">
   Количество экземпляров на складе:
   <%= @product.quantity %>
 </div>
