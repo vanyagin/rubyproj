@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   root to: 'home#index'
   get '/choose_category/:id', to: 'home#choose_category'
   get '/choose_category/choose_product/:id', to: 'home#choose_product'
-  get 'cart', to: 'home#cart'
+  get '/cart', to: 'home#cart'
 
 end
