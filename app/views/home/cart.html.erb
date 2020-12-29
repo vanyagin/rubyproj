@@ -6,5 +6,16 @@
   </style>
 </head>
 <div class="cart_mes">
-  Ваша корзина:
+  Ваша корзина
+  <div>
+  Номера ваших заказов:
+  <% @order.each do |order| %>
+    <%= order.id %>
+  <% end %>
+  </div>
+</div>
+<div>
+  <%= form_with url: "/cart", action: clear, method: :get do |form| %>
+    <%= form.submit "Очистить корзину" %>
+  <% end %>
 </div>

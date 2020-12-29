@@ -23,3 +23,8 @@
   Количество экземпляров на складе:
   <%= @product.quantity %>
 </div>
+<div>
+  <%= form_with url: "/choose_product", action: add_prod(@product), method: :get do |form| %>
+    <%= form.submit "Add" %>
+  <% end %>
+</div>
